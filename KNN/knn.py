@@ -19,24 +19,3 @@ class knn:
         ind = ind[:self.k]
         label_near = self.train_labels[ind]
         return cl.Counter(label_near).most_common(1)[0][0]
-     
-
-# X = np.array([
-# [.1, .1],
-# [.3, .1],
-# [.1, .3],
-# [.2, .2],
-# [.01, .2],
-# [.05, .15],
-# [10, 10],
-# [8, 8],
-# [9, 13]])
-
-# y = np.array(['a','a','a','a','a','a','b','b','b'])
-
-# Alg = knn()
-
-# Alg.train(X,y)
-
-# print(type(Alg.learn(np.array([[.15,.18], [15,18], [25,38]])) ) )
-
